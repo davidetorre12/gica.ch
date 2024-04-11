@@ -17,11 +17,19 @@
        header {
            text-align: left;
            margin: 20px;
+           display: flex;
+           align-items: baseline;
+           /* justify-content: space-evenly; */
        }
        header h1 {
            font-size: 130px; /* 25px */
            margin: 0;
        }
+
+       #bottoni {
+            margin-left: 1rem;
+       }
+
  
        main {
            display: grid;
@@ -81,14 +89,18 @@
 </head>
 <body>
    <header>
-       <h1>gica.ch</h1>
+      
+       <h1 id="titolo">gica.ch</h1>
+       <div id="bottoni">
+           <button onclick="displayHomeLayout(this)">Home</button>
+           <button onclick="sortByColor(this)">Colore</button>
+           <button onclick="sortByDate(this)">Data</button>
+           <button onclick="sortByProvenienza(this)">Provenienza</button>
+           <button onclick="sortByMerce(this)">Merce</button>
+       </div>  
        
    </header>
-   <button onclick="displayHomeLayout(this)">Home</button>
-   <button onclick="sortByColor(this)">Colore</button>
-   <button onclick="sortByDate(this)">Data</button>
-   <button onclick="sortByProvenienza(this)">Provenienza</button>
-   <button onclick="sortByMerce(this)">Merce</button>
+   
  
    <main></main>
    <script>
@@ -109,11 +121,11 @@
                <div class='item ${isSortedByDate ? 'small-img' : ''}'>
                    <img src='./assets/immagini/${item.file}.jpg'>
                    <div class="image-info">
-                       <div>${item.data}</div>
-                       <div>${item.provenienza}</div>
-                       <div>${item.vagone}</div>
-                       <div>${item.merce}</div>
-                       <div>${item.prestazione}</div>
+                    <div class='data'>${item.data}</div>
+                           <div class='provenienza'>${item.provenienza}</div>
+                           <div class='vagone'>${item.vagone}</div>
+                           <div class='merce'>${item.merce}</div>
+                           <div class='prestazione'>${item.prestazione}</div>
                    </div>
                </div>
            `).join('');

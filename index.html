@@ -17,19 +17,11 @@
        header {
            text-align: left;
            margin: 20px;
-           display: flex;
-           align-items: baseline;
-           /* justify-content: space-evenly; */
        }
        header h1 {
            font-size: 130px; /* 25px */
            margin: 0;
        }
-
-       #bottoni {
-            margin-left: 1rem;
-       }
-
  
        main {
            display: grid;
@@ -53,14 +45,12 @@
            position: relative;
        }
        .item img {
-          width: 150px; /* Default image width */
+           width: 150px; /* Default image width */
            height: auto;
            margin-bottom: 5px;
        }
        .small-img img { /* New class for smaller images */
-           width: 150px !important;  /*Override width for sorted images */
-           /* width: 10%; */
-
+           width: 150px !important; /* Override width for sorted images */
        }
        .item:hover .image-info {
            display: block;
@@ -73,7 +63,8 @@
            bottom: 5px;
            text-align: left;
            margin-left: 10px;
-           width: 150px; /* Adjust based on the image width */
+           width: 100%;
+           max-width: 150px; /* Adjust based on the image width */
        }
        button {
            border: none;
@@ -86,43 +77,24 @@
        .active {
            font-weight: bold;
        }
-
-
-       @media (max-width: 760px) {
-            body {
-                /* background-color: red; */
-            }
-
-            main {
-                grid-template-columns: repeat(4, 1fr); 
-            }
-        }
-
-
    </style>
 </head>
 <body>
-
-
-
    <header>
-    <h1 id="titolo">gica.ch</h1>
-    <div id="bottoni">
-        <button onclick="displayHomeLayout(this)">Home</button>
-        <button onclick="sortByColor(this)">Colore</button>
-        <button onclick="sortByDate(this)">Data</button>
-        <button onclick="sortByProvenienza(this)">Provenienza</button>
-        <button onclick="sortByMerce(this)">Merce</button>
-    </div>  
-    
+       <h1>gica.ch</h1>
+       
    </header>
-
-
+   <button onclick="displayHomeLayout(this)">Home</button>
+   <button onclick="sortByColor(this)">Colore</button>
+   <button onclick="sortByDate(this)">Data</button>
+   <button onclick="sortByProvenienza(this)">Provenienza</button>
+   <button onclick="sortByMerce(this)">Merce</button>
+ 
    <main></main>
    <script>
        let data;
        document.addEventListener('DOMContentLoaded', function() {
-           fetch("./assets/data/data.json")
+           fetch("./assets/data.json")
                .then(response => response.json())
                .then(json => {
                    data = json;
@@ -135,7 +107,7 @@
        function displayData(data, isSortedByDate = false) {
            const output = data.slice(0, 100).map(item => `
                <div class='item ${isSortedByDate ? 'small-img' : ''}'>
-                   <img src='./assets/imgs/${item.file}.jpg'>
+                   <img src='./assets/immagini/${item.file}.jpg'>
                    <div class="image-info">
                        <div>${item.data}</div>
                        <div>${item.provenienza}</div>
@@ -178,14 +150,10 @@
                return acc;
            }, {});
  
-
            const output = Object.keys(groupedByDate).sort((a, b) => new Date(a) - new Date(b)).map(date => {
-                let x = 0
-               const itemsHtml = groupedByDate[date].map(item =>
-                
-               `
+               const itemsHtml = groupedByDate[date].map(item => `
                    <div class='item small-img'>
-                       <img src='./assets/imgs/${item.file}.jpg'>
+                       <img src='./assets/immagini/${item.file}.jpg'>
                        <div class="image-info">
                            <div>${item.data}</div>
                            <div>${item.provenienza}</div>
@@ -195,7 +163,6 @@
                        </div>
                    </div>
                `).join('');
-               
                return `<div class='date-group'>
                            <div class='date-title'>${date}</div>
                            ${itemsHtml}
@@ -213,23 +180,19 @@
                return acc;
            }, {});
  
-
            const output = Object.keys(groupedByProvenienza).sort().map(provenienza => {
-
                const itemsHtml = groupedByProvenienza[provenienza].map(item => `
                    <div class='item small-img'>
-                       <img src='./assets/imgs/${item.file}.jpg'>
+                       <img src='./assets/immagini/${item.file}.jpg'>
                        <div class="image-info">
-                           <div class='data'>${item.data}</div>
-                           <div class='provenienza'>${item.provenienza}</div>
-                           <div class='vagone'>${item.vagone}</div>
-                           <div class='merce'>${item.merce}</div>
-                           <div class='prestazione'>${item.prestazione}</div>
+                           <div>${item.data}</div>
+                           <div>${item.provenienza}</div>
+                           <div>${item.vagone}</div>
+                           <div>${item.merce}</div>
+                           <div>${item.prestazione}</div>
                        </div>
                    </div>
                `).join('');
-
-
                return `<div class='date-group'>
                            <div class='provenienza-title'>${provenienza}</div>
                            ${itemsHtml}
@@ -250,7 +213,7 @@
            const output = Object.keys(groupedByMerce).sort().map(merce => {
                const itemsHtml = groupedByMerce[merce].map(item => `
                    <div class='item small-img'>
-                       <img src='./assets/imgs/${item.file}.jpg'>
+                       <img src='./assets/immagini/${item.file}.jpg'>
                        <div class="image-info">
                            <div>${item.data}</div>
                            <div>${item.provenienza}</div>

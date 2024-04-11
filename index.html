@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>vagoni</title>
+   <style>
+       body {
+           font-family: Helvetica, sans-serif;
+           font-size: 10px;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       
+       header {
+           text-align: left;
+           margin: 20px;
+       }
+       header h1 {
+           font-size: 130px; /* 25px */
+           margin: 0;
+       }
+ 
+       main {
+           display: grid;
+           grid-template-columns: repeat(10, 1fr); /* 10 columns */
+           grid-gap: 10px;
+           padding: 10px;
+       }
+       .date-group, .home-layout {
+           display: contents;
+       }
+       .date-title, .provenienza-title, .merce-title {
+           grid-column: 1 / -1; /* Span entire grid */
+           font-weight: bold;
+           margin-bottom: 5px;
+           font-size: 25px;
+       }
+       .item {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           position: relative;
+       }
+       .item img {
+           width: 150px; /* Default image width */
+           height: auto;
+           margin-bottom: 5px;
+       }
+       .small-img img { /* New class for smaller images */
+           width: 150px !important; /* Override width for sorted images */
+       }
+       .item:hover .image-info {
+           display: block;
+       }
+       .image-info {
+           display: none;
+           position: absolute;
+           background-color: rgba(255, 255, 255, 0.8);
+           padding: 5px;
+           bottom: 5px;
+           text-align: left;
+           margin-left: 10px;
+           width: 100%;
+           max-width: 150px; /* Adjust based on the image width */
+       }
+       button {
+           border: none;
+           background: none;
+           cursor: pointer;
+           margin-bottom: 50px;
+       
+          
+       }
+       .active {
+           font-weight: bold;
+       }
+   </style>
+</head>
+<body>
+   <header>
+       <h1>gica.ch</h1>
+       
+   </header>
+   <button onclick="displayHomeLayout(this)">Home</button>
+   <button onclick="sortByColor(this)">Colore</button>
+   <button onclick="sortByDate(this)">Data</button>
+   <button onclick="sortByProvenienza(this)">Provenienza</button>
+   <button onclick="sortByMerce(this)">Merce</button>
+ 
+   <main></main>
+   <script>
+       let data;
+       document.addEventListener('DOMContentLoaded', function() {
+           fetch("./assets/data/data.json")
+               .then(response => response.json())
+               .then(json => {
+                   data = json;
+                   displayHomeLayout();
+                   // Setta il pulsante "Home" come attivo di default
+                   document.querySelector('button').classList.add('active');
+               });
+       });
+ 
+       function displayData(data, isSortedByDate = false) {
+           const output = data.slice(0, 100).map(item => `
+               <div class='item ${isSortedByDate ? 'small-img' : ''}'>
+                   <img src='./assets/imgs/${item.file}.jpg'>
+                   <div class="image-info">
+                       <div>${item.data}</div>
+                       <div>${item.provenienza}</div>
+                       <div>${item.vagone}</div>
+                       <div>${item.merce}</div>
+                       <div>${item.prestazione}</div>
+                   </div>
+               </div>
+           `).join('');
+           document.querySelector('main').innerHTML = output;
+       }
+ 
+       function displayHomeLayout(button) {
+           resetButtons();
+           if (button) {
+               button.classList.add('active');
+           } else {
+               // Se non è stato passato alcun bottone, attiva il primo bottone (Home)
+               document.querySelectorAll('button')[0].classList.add('active');
+           }
+           displayData(data);
+       }
+ 
+       function sortByColor(button) {
+           resetButtons();
+           button.classList.add('active');
+           const sortedData = [...data].sort((a, b) => {
+               const aRGB = a.colore.split(', ').map(Number);
+               const bRGB = b.colore.split(', ').map(Number);
+               return aRGB.reduce((acc, cur) => acc + cur, 0) - bRGB.reduce((acc, cur) => acc + cur, 0);
+           });
+           displayData(sortedData);
+       }
+ 
+       function sortByDate(button) {
+           resetButtons();
+           button.classList.add('active');
+           const groupedByDate = [...data].reduce((acc, cur) => {
+               (acc[cur.data] = acc[cur.data] || []).push(cur);
+               return acc;
+           }, {});
+ 
+           const output = Object.keys(groupedByDate).sort((a, b) => new Date(a) - new Date(b)).map(date => {
+               const itemsHtml = groupedByDate[date].map(item => `
+                   <div class='item small-img'>
+                       <img src='./assets/imgs/${item.file}.jpg'>
+                       <div class="image-info">
+                           <div>${item.data}</div>
+                           <div>${item.provenienza}</div>
+                           <div>${item.vagone}</div>
+                           <div>${item.merce}</div>
+                           <div>${item.prestazione}</div>
+                       </div>
+                   </div>
+               `).join('');
+               return `<div class='date-group'>
+                           <div class='date-title'>${date}</div>
+                           ${itemsHtml}
+                       </div>`;
+           }).join('');
+ 
+           document.querySelector('main').innerHTML = output;
+       }
+ 
+       function sortByProvenienza(button) {
+           resetButtons();
+           button.classList.add('active');
+           const groupedByProvenienza = [...data].reduce((acc, cur) => {
+               (acc[cur.provenienza] = acc[cur.provenienza] || []).push(cur);
+               return acc;
+           }, {});
+ 
+           const output = Object.keys(groupedByProvenienza).sort().map(provenienza => {
+               const itemsHtml = groupedByProvenienza[provenienza].map(item => `
+                   <div class='item small-img'>
+                       <img src='./assets/imgs/${item.file}.jpg'>
+                       <div class="image-info">
+                           <div>${item.data}</div>
+                           <div>${item.provenienza}</div>
+                           <div>${item.vagone}</div>
+                           <div>${item.merce}</div>
+                           <div>${item.prestazione}</div>
+                       </div>
+                   </div>
+               `).join('');
+               return `<div class='date-group'>
+                           <div class='provenienza-title'>${provenienza}</div>
+                           ${itemsHtml}
+                       </div>`;
+           }).join('');
+ 
+           document.querySelector('main').innerHTML = output;
+       }
+ 
+       function sortByMerce(button) {
+           resetButtons();
+           button.classList.add('active');
+           const groupedByMerce = [...data].reduce((acc, cur) => {
+               (acc[cur.merce] = acc[cur.merce] || []).push(cur);
+               return acc;
+           }, {});
+ 
+           const output = Object.keys(groupedByMerce).sort().map(merce => {
+               const itemsHtml = groupedByMerce[merce].map(item => `
+                   <div class='item small-img'>
+                       <img src='./assets/imgs/${item.file}.jpg'>
+                       <div class="image-info">
+                           <div>${item.data}</div>
+                           <div>${item.provenienza}</div>
+                           <div>${item.vagone}</div>
+                           <div>${item.merce}</div>
+                           <div>${item.prestazione}</div>
+                       </div>
+                   </div>
+               `).join('');
+               return `<div class='date-group'>
+                           <div class='merce-title'>${merce}</div>
+                           ${itemsHtml}
+                       </div>`;
+           }).join('');
+ 
+           document.querySelector('main').innerHTML = output;
+       }
+ 
+       function resetButtons() {
+           document.querySelectorAll('button').forEach(button => button.classList.remove('active'));
+       }
+   </script>
+</body>
+</html>

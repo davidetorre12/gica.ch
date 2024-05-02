@@ -10,12 +10,9 @@ Autore: Torre Davide
 
 
 ## Introduzione e tema
-
-
-
-
-
-https://github.com/ixd-supsi/2024/raw/main/templates/template_README/doc/sdf_test.mp4
+Il progetto prevede la creazione di un prototipo digitale, un database costituito da materiale autoprodotto. 
+Questo database, sviluppato con logica e intuitività, permette di raccogliere informazioni essenziali per le fasi di analisi e archiviazione dei lavori completati dall'azienda personale, 
+garantendo un utilizzo semplice e intuitivo.
 
 ## Riferimenti progettuali
 Dolor sit amet consectetur adipiscing elit duis tristique. Sociis natoque penatibus et magnis dis parturient montes nascetur. Est sit amet facilisis magna. Tellus rutrum tellus pellentesque eu. Dictum sit amet justo donec enim. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed faucibus turpis in eu mi bibendum neque egestas congue. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Dolor magna eget est lorem ipsum dolor. Sit amet mattis vulputate enim nulla. Elit pellentesque habitant morbi tristique senectus et. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.
@@ -55,6 +52,5 @@ image.src = url;
 ```
 
 ## Target e contesto d’uso
-Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-
+Il database nasce dalla necessità di dover archiviare e digitalizzare i lavori svolti in azienda, come riordini o trasbordi di treni merci e tenerne traccia in un ordine cronologico, inoltre l'accopiamento a altri dati come la tipologia di merce e il luogo di provenienza. Oltre che certificare il proprio operato visto l'allesitmento il tool diventa quindi fondamentale per prendere coscenza dell'utilizzo delle proprioe risorse in azienda come investimenti interni e o riparazioni di veicoli coinvoli con l'azienda.
 [<img src="doc/munari.jpg" width="300" alt="Supplemento al dizionario italiano">]()

@@ -6,7 +6,7 @@ Elaborato 1: gica.ch
 
 # Titolo progetto
 Autore: Davide Torre  
-[gica.ch](xxxxxx)
+[gica.ch](https://davidetorre12.github.io/gica.ch/)
 
 
 ## Introduzione e tema

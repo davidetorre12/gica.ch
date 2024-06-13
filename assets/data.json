@@ -2,7 +2,6 @@
     {
         "file": "00",
         "vagone": "037-7",
-        "colore": "148, 110, 108",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "05.01.23",
@@ -11,7 +10,6 @@
     {
         "file": "01",
         "vagone": "066-2",
-        "colore": "172, 84, 91",
         "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "05.01.23",
@@ -20,7 +18,6 @@
     {
         "file": "02",
         "vagone": "083-6",
-        "colore": "154, 141, 123",
         "provenienza": "Italia",
         "merce": "materiale su paletta",
         "data": "10.01.23",
@@ -29,7 +26,6 @@
     {
         "file": "03",
         "vagone": "620-5",
-        "colore": "150, 89, 98",
         "provenienza": "Lussenburgo",
         "merce": "materiale su paletta",
         "data": "20.01.23",
@@ -38,7 +34,6 @@
     {
         "file": "04",
         "vagone": "631-7",
-        "colore": "75, 111, 160",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "20.01.23",
@@ -47,7 +42,6 @@
     {
         "file": "05",
         "vagone": "042-7",
-        "colore": "138, 88, 93",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "23.01.23",
@@ -56,7 +50,6 @@
     {
         "file": "06",
         "vagone": "272-2",
-        "colore": "148, 139, 130",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "31.01.23",
@@ -65,7 +58,6 @@
     {
         "file": "07",
         "vagone": "279-1",
-        "colore": "167, 161, 147",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "31.01.23",
@@ -74,7 +66,6 @@
     {
         "file": "08",
         "vagone": "736-8",
-        "colore": "174, 139, 101",
         "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "31.01.23",
@@ -83,7 +74,6 @@
     {
         "file": "09",
         "vagone": "850-2",
-        "colore": "133, 122, 87",
         "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "31.01.23",
@@ -92,7 +82,6 @@
     {
         "file": "10",
         "vagone": "186-9",
-        "colore": "154, 136, 126",
         "provenienza": "Francia",
         "merce": "lamiere",
         "data": "06.02.23",
@@ -101,7 +90,6 @@
     {
         "file": "11",
         "vagone": "208-2",
-        "colore": "163, 148, 129",
         "provenienza": "Francia",
         "merce": "lamiere",
         "data": "06.02.23",
@@ -110,7 +98,6 @@
     {
         "file": "12",
         "vagone": "185-1",
-        "colore": "147, 117, 117",
         "provenienza": "Francia",
         "merce": "lamiere",
         "data": "06.02.23",
@@ -119,7 +106,6 @@
     {
         "file": "13",
         "vagone": "387-4",
-        "colore": "163, 136, 107",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "06.02.23",
@@ -128,7 +114,6 @@
     {
         "file": "14",
         "vagone": "279-1",
-        "colore": "132, 92, 108",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "06.02.23",
@@ -137,7 +122,6 @@
     {
         "file": "15",
         "vagone": "726-5",
-        "colore": "129, 98, 85",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "06.02.23",
@@ -146,7 +130,6 @@
     {
         "file": "16",
         "vagone": "876-2",
-        "colore": "131, 120, 111",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "06.02.23",
@@ -155,7 +138,6 @@
     {
         "file": "17",
         "vagone": "084-7",
-        "colore": "147, 142, 141",
         "provenienza": "Lussenburgo",
         "merce": "materiale su paletta",
         "data": "09.02.23",
@@ -164,7 +146,6 @@
     {
         "file": "18",
         "vagone": "273-6",
-        "colore": "147, 133, 118",
         "provenienza": "Belgio",
         "merce": "materiale su paletta",
         "data": "15.02.23",
@@ -173,7 +154,6 @@
     {
         "file": "19",
         "vagone": "980-3",
-        "colore": "144, 148, 148",
         "provenienza": "Finlandia",
         "merce": "materiale su paletta",
         "data": "16.02.23",
@@ -182,7 +162,6 @@
     {
         "file": "20",
         "vagone": "173-8",
-        "colore": "164, 114, 105",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "17.02.23",
@@ -191,7 +170,6 @@
     {
         "file": "21",
         "vagone": "445-8",
-        "colore": "156, 148, 139",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "17.02.23",
@@ -200,7 +178,6 @@
     {
         "file": "22",
         "vagone": "175-8",
-        "colore": "156, 129, 106",
         "provenienza": "Francia",
         "merce": "rottame",
         "data": "17.02.23",
@@ -209,7 +186,6 @@
     {
         "file": "23",
         "vagone": "620-7",
-        "colore": "148, 109, 103",
         "provenienza": "Francia",
         "merce": "coils",
         "data": "27.02.23",
@@ -218,7 +194,6 @@
     {
         "file": "24",
         "vagone": "252-9",
-        "colore": "146, 118, 111",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "27.02.23",
@@ -227,7 +202,6 @@
     {
         "file": "25",
         "vagone": "761-2",
-        "colore": "130, 133, 142",
         "provenienza": "Germania",
         "merce": "vergella",
         "data": "27.02.23",
@@ -236,7 +210,6 @@
     {
         "file": "26",
         "vagone": "099-0",
-        "colore": "163, 160, 155",
         "provenienza": "Italia",
         "merce": "fili di ferro",
         "data": "27.02.23",
@@ -245,7 +218,6 @@
     {
         "file": "27",
         "vagone": "685-3",
-        "colore": "67, 81, 104",
         "provenienza": "Italia",
         "merce": "fili di ferro",
         "data": "27.12.23",
@@ -254,7 +226,6 @@
     {
         "file": "28",
         "vagone": "018-0",
-        "colore": "139, 125, 117",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "28.02.23",
@@ -263,7 +234,6 @@
     {
         "file": "29",
         "vagone": "551-1",
-        "colore": "164, 71, 72",
         "provenienza": "Germania",
         "merce": "materiale su paletta",
         "data": "28.02.23",
@@ -272,7 +242,6 @@
     {
         "file": "30",
         "vagone": "035-4",
-        "colore": "145, 127, 112",
         "provenienza": "Lussenburgo",
         "merce": "rottame",
         "data": "28.02.23",
@@ -281,7 +250,6 @@
     {
         "file": "31",
         "vagone": "686-1",
-        "colore": "94, 111, 126",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "28.02.23",
@@ -290,7 +258,6 @@
     {
         "file": "32",
         "vagone": "715-6",
-        "colore": "160, 159, 143",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "28.02.23",
@@ -299,7 +266,6 @@
     {
         "file": "33",
         "vagone": "062-5",
-        "colore": "121, 147, 134",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "28.02.23",
@@ -308,7 +274,6 @@
     {
         "file": "34",
         "vagone": "367-4",
-        "colore": "147, 106, 99",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "07.03.23",
@@ -317,7 +282,6 @@
     {
         "file": "35",
         "vagone": "650-5",
-        "colore": "140, 132, 127",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "08.03.23",
@@ -326,7 +290,6 @@
     {
         "file": "36",
         "vagone": "955-5",
-        "colore": "126, 144, 152",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "08.03.23",
@@ -335,7 +298,6 @@
     {
         "file": "37",
         "vagone": "029-7",
-        "colore": "69, 82, 105",
         "provenienza": "Germania",
         "merce": "ferro",
         "data": "08.03.23",
@@ -344,7 +306,6 @@
     {
         "file": "38",
         "vagone": "541-5",
-        "colore": "122, 121, 119",
         "provenienza": "Germania",
         "merce": "ferro",
         "data": "08.03.23",
@@ -353,7 +314,6 @@
     {
         "file": "39",
         "vagone": "889-8",
-        "colore": "163, 79, 74",
         "provenienza": "Germania",
         "merce": "ferro",
         "data": "08.03.23",
@@ -362,7 +322,6 @@
     {
         "file": "40",
         "vagone": "480-3",
-        "colore": "155, 137, 114",
         "provenienza": "Austria",
         "merce": "vergella",
         "data": "13.03.23",
@@ -371,7 +330,6 @@
     {
         "file": "41",
         "vagone": "699-4",
-        "colore": "169, 126, 80",
         "provenienza": "Austria",
         "merce": "vergella",
         "data": "13.03.23",
@@ -380,7 +338,6 @@
     {
         "file": "42",
         "vagone": "290-2",
-        "colore": "56, 105, 159",
         "provenienza": "Austria",
         "merce": "vergella",
         "data": "13.03.23",
@@ -389,7 +346,6 @@
     {
         "file": "43",
         "vagone": "587-8",
-        "colore": "148, 77, 65",
         "provenienza": "Austria",
         "merce": "materiale su paletta",
         "data": "14.03.23",
@@ -398,7 +354,6 @@
     {
         "file": "44",
         "vagone": "227-6",
-        "colore": "139, 132, 119",
         "provenienza": "Belgio",
         "merce": "rottame",
         "data": "14.03.23",
@@ -407,7 +362,6 @@
     {
         "file": "45",
         "vagone": "139-7",
-        "colore": "152, 95, 96",
         "provenienza": "Belgio",
         "merce": "coils",
         "data": "15.03.23",
@@ -416,7 +370,6 @@
     {
         "file": "46",
         "vagone": "119-1",
-        "colore": "151, 134, 118",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "15.03.23",
@@ -425,7 +378,6 @@
     {
         "file": "47",
         "vagone": "093-3",
-        "colore": "171, 152, 125",
         "provenienza": "Germania",
         "merce": "vergella",
         "data": "20.03.23",
@@ -434,7 +386,6 @@
     {
         "file": "48",
         "vagone": "014-6",
-        "colore": "153, 117, 116",
         "provenienza": "Germania",
         "merce": "lamiere",
         "data": "22.03.23",
@@ -443,7 +394,6 @@
     {
         "file": "49",
         "vagone": "395-6",
-        "colore": "113, 109, 107",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "27.03.23",
@@ -452,7 +402,6 @@
     {
         "file": "50",
         "vagone": "389-5",
-        "colore": "137, 137, 128",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "29.03.23",
@@ -461,7 +410,6 @@
     {
         "file": "51",
         "vagone": "090-9",
-        "colore": "133, 120, 108",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "29.03.23",
@@ -470,7 +418,6 @@
     {
         "file": "52",
         "vagone": "953-4",
-        "colore": "171, 161, 147",
         "provenienza": "Francia",
         "merce": "fili di ferro",
         "data": "29.03.23",
@@ -479,7 +426,6 @@
     {
         "file": "53",
         "vagone": "146-9",
-        "colore": "171, 154, 126",
         "provenienza": "Francia",
         "merce": "coils",
         "data": "29.03.23",
@@ -488,7 +434,6 @@
     {
         "file": "54",
         "vagone": "137-8",
-        "colore": "124, 119, 117",
         "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "29.03.23",
@@ -497,7 +442,6 @@
     {
         "file": "55",
         "vagone": "559-7",
-        "colore": "115, 116, 119",
         "provenienza": "Polonia",
         "merce": "barre metalliche",
         "data": "13.04.23",
@@ -505,9 +449,7 @@
     },
     {
         "file": "56",
-        "vagone": "155-1",
-        "colore": "147, 123, 92",
-        "provenienza": "Polonia",
+        "vagone": "155-1",        "provenienza": "Polonia",
         "merce": "barre metalliche",
         "data": "18.04.23",
         "prestazione": "riordino"
@@ -515,7 +457,6 @@
     {
         "file": "57",
         "vagone": "012-8",
-        "colore": "156, 130, 104",
         "provenienza": "Germania",
         "merce": "rottame",
         "data": "18.04.23",
@@ -524,7 +465,6 @@
     {
         "file": "58",
         "vagone": "136-0",
-        "colore": "121, 114, 109",
         "provenienza": "Paesi Bassi",
         "merce": "vergella",
         "data": "22.04.23",
@@ -533,7 +473,6 @@
     {
         "file": "59",
         "vagone": "243-0",
-        "colore": "165, 149, 130",
         "provenienza": "Ungheria",
         "merce": "lamiere",
         "data": "24.04.23",
@@ -542,7 +481,6 @@
     {
         "file": "60",
         "vagone": "061-4",
-        "colore": "141, 140, 132",
         "provenienza": "Ungheria",
         "merce": "coils",
         "data": "24.04.23",
@@ -550,9 +488,7 @@
     },
     {
         "file": "61",
-        "vagone": "632-0",
-        "colore": "146, 83, 84",
-        "provenienza": "Ungheria",
+        "vagone": "632-0",       "provenienza": "Ungheria",
         "merce": "piastrelle",
         "data": "24.04.23",
         "prestazione": "trasbordo"
@@ -560,7 +496,6 @@
     {
         "file": "62",
         "vagone": "036-2",
-        "colore": "155, 150, 139",
         "provenienza": "Francia",
         "merce": "vergella",
         "data": "24.04.23",
@@ -569,7 +504,6 @@
     {
         "file": "63",
         "vagone": "169-1",
-        "colore": "141, 123, 114",
         "provenienza": "Francia",
         "merce": "vergella",
         "data": "24.04.23",
@@ -578,7 +512,6 @@
     {
         "file": "64",
         "vagone": "194-9",
-        "colore": "174, 144, 121",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "24.04.23",
@@ -587,7 +520,6 @@
     {
         "file": "65",
         "vagone": "018-6",
-        "colore": "162, 163, 153",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "27.04.23",
@@ -596,7 +528,6 @@
     {
         "file": "66",
         "vagone": "690-8",
-        "colore": "156, 148, 135",
         "provenienza": "Germania",
         "merce": "rottame",
         "data": "04.05.23",
@@ -605,7 +536,6 @@
     {
         "file": "67",
         "vagone": "594-0",
-        "colore": "112, 123, 130",
         "provenienza": "Germania",
         "merce": "rottame",
         "data": "04.05.23",
@@ -613,9 +543,7 @@
     },
     {
         "file": "68",
-        "vagone": "514-8",
-        "colore": "102, 99, 101",
-        "provenienza": "Germania",
+        "vagone": "514-8",        "provenienza": "Germania",
         "merce": "coils",
         "data": "10.05.23",
         "prestazione": "riordino"
@@ -623,7 +551,6 @@
     {
         "file": "69",
         "vagone": "922-7",
-        "colore": "158, 114, 103",
         "provenienza": "Lussenburgo",
         "merce": "tubi",
         "data": "10.05.23",
@@ -632,7 +559,6 @@
     {
         "file": "70",
         "vagone": "071-3",
-        "colore": "134, 125, 115",
         "provenienza": "Lussenburgo",
         "merce": "tubi",
         "data": "10.05.23",
@@ -640,9 +566,7 @@
     },
     {
         "file": "71",
-        "vagone": "250-6",
-        "colore": "98, 96, 105",
-        "provenienza": "Germania",
+        "vagone": "250-6",       "provenienza": "Germania",
         "merce": "coils",
         "data": "10.05.23",
         "prestazione": "trasbordo"
@@ -650,7 +574,6 @@
     {
         "file": "72",
         "vagone": "998-9",
-        "colore": "155, 153, 150",
         "provenienza": "Germania",
         "merce": "piastrelle",
         "data": "10.05.23",
@@ -659,7 +582,6 @@
     {
         "file": "73",
         "vagone": "399-8",
-        "colore": "126, 127, 123",
         "provenienza": "Germania",
         "merce": "vergella",
         "data": "10.05.23",
@@ -667,18 +589,14 @@
     },
     {
         "file": "74",
-        "vagone": "685-8",
-        "colore": "164, 82, 88",
-        "provenienza": "Germania",
+        "vagone": "685-8",       "provenienza": "Germania",
         "merce": "fili di ferro",
         "data": "10.05.23",
         "prestazione": "trasbordo"
     },
     {
         "file": "75",
-        "vagone": "197-7",
-        "colore": "133, 104, 99",
-        "provenienza": "Germania",
+        "vagone": "197-7",        "provenienza": "Germania",
         "merce": "coils",
         "data": "12.05.23",
         "prestazione": "riordino"
@@ -686,7 +604,6 @@
     {
         "file": "76",
         "vagone": "935-9",
-        "colore": "163, 107, 101",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "12.05.23",
@@ -694,18 +611,14 @@
     },
     {
         "file": "77",
-        "vagone": "821-1",
-        "colore": "151, 108, 96",
-        "provenienza": "Germania",
+        "vagone": "821-1",        "provenienza": "Germania",
         "merce": "coils",
         "data": "12.05.23",
         "prestazione": "trasbordo"
     },
     {
         "file": "78",
-        "vagone": "127-6",
-        "colore": "167, 102, 92",
-        "provenienza": "Francia",
+        "vagone": "127-6",        "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "29.11.23",
         "prestazione": "trasbordo"
@@ -713,7 +626,6 @@
     {
         "file": "79",
         "vagone": "897-9",
-        "colore": "163, 168, 170",
         "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "22.05.23",
@@ -722,7 +634,6 @@
     {
         "file": "80",
         "vagone": "501-9",
-        "colore": "128, 123, 121",
         "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "22.05.23",
@@ -731,7 +642,6 @@
     {
         "file": "81",
         "vagone": "819-2",
-        "colore": "138, 120, 117",
         "provenienza": "Francia",
         "merce": "materiale su paletta",
         "data": "22.05.23",
@@ -740,7 +650,6 @@
     {
         "file": "82",
         "vagone": "617-9",
-        "colore": "117, 109, 104",
         "provenienza": "Germania",
         "merce": "coils",
         "data": "24.05.23",
@@ -749,7 +658,6 @@
     {
         "file": "83",
         "vagone": "148-5",
-        "colore": "153, 150, 132",
         "provenienza": "Germania",
         "merce": "piastrelle",
         "data": "24.05.23",
@@ -758,7 +666,6 @@
     {
         "file": "84",
         "vagone": "596-9",
-        "colore": "112, 106, 100",
         "provenienza": "Germania",
         "merce": "vergella",
         "data": "24.05.23",
@@ -766,27 +673,21 @@
     },
     {
         "file": "85",
-        "vagone": "592-9",
-        "colore": "144, 77, 69",
-        "provenienza": "Germania",
+        "vagone": "592-9",       "provenienza": "Germania",
         "merce": "fili di ferro",
         "data": "31.05.23",
         "prestazione": "riordino"
     },
     {
         "file": "86",
-        "vagone": "271-2",
-        "colore": "139, 93, 93",
-        "provenienza": "Germania",
+        "vagone": "271-2",       "provenienza": "Germania",
         "merce": "coils",
         "data": "31.05.23",
         "prestazione": "riordino"
     },
     {
         "file": "87",
-        "vagone": "221-7",
-        "colore": "119, 96, 96",
-        "provenienza": "Svizzera",
+        "vagone": "221-7",       "provenienza": "Svizzera",
         "merce": "materiale su paletta",
         "data": "31.05.23",
         "prestazione": "riordino"
@@ -794,7 +695,6 @@
     {
         "file": "88",
         "vagone": "087-8",
-        "colore": "126, 113, 109",
         "provenienza": "Svizzera",
         "merce": "rotoli di carta",
         "data": "03.06.23",
@@ -803,7 +703,6 @@
     {
         "file": "89",
         "vagone": "330-3",
-        "colore": "154, 103, 111",
         "provenienza": "Svizzera",
         "merce": "rotoli di carta",
         "data": "03.06.23",
@@ -812,7 +711,6 @@
     {
         "file": "90",
         "vagone": "264-2",
-        "colore": "132, 116, 110",
         "provenienza": "Svizzera",
         "merce": "rotoli di carta",
         "data": "03.06.23",
@@ -821,7 +719,6 @@
     {
         "file": "91",
         "vagone": "332-3",
-        "colore": "164, 107, 104",
         "provenienza": "Svizzera",
         "merce": "rotoli di carta",
         "data": "03.06.23",
@@ -830,7 +727,6 @@
     {
         "file": "92",
         "vagone": "112-5",
-        "colore": "166, 151, 124",
         "provenienza": "Svizzera",
         "merce": "rifiuti",
         "data": "13.06.23",
@@ -838,27 +734,21 @@
     },
     {
         "file": "93",
-        "vagone": "351-0",
-        "colore": "130, 94, 83",
-        "provenienza": "Svizzera",
+        "vagone": "351-0",       "provenienza": "Svizzera",
         "merce": "rifiuti",
         "data": "14.06.23",
         "prestazione": "trasbordo"
     },
     {
         "file": "94",
-        "vagone": "149-8",
-        "colore": "125, 92, 88",
-        "provenienza": "Svizzera",
+        "vagone": "149-8",       "provenienza": "Svizzera",
         "merce": "rifiuti",
         "data": "14.06.23",
         "prestazione": "trasbordo"
     },
     {
         "file": "95",
-        "vagone": "434-3",
-        "colore": "155, 93, 91",
-        "provenienza": "Svizzera",
+        "vagone": "434-3",       "provenienza": "Svizzera",
         "merce": "rotoli di carta",
         "data": "23.06.23",
         "prestazione": "riordino"
@@ -866,7 +756,6 @@
     {
         "file": "96",
         "vagone": "002-3",
-        "colore": "100, 100, 107",
         "provenienza": "Francia",
         "merce": "fili di ferro",
         "data": "23.06.23",
@@ -875,7 +764,6 @@
     {
         "file": "97",
         "vagone": "018-0",
-        "colore": "162, 129, 103",
         "provenienza": "Lussenburgo",
         "merce": "tubi",
         "data": "26.06.23",
@@ -884,7 +772,6 @@
     {
         "file": "98",
         "vagone": "586-6",
-        "colore": "122, 122, 123",
         "provenienza": "Paesi Bassi",
         "merce": "materiale su paletta",
         "data": "26.06.23",
@@ -893,7 +780,6 @@
     {
         "file": "99",
         "vagone": "243-4",
-        "colore": "138, 135, 136",
         "provenienza": "Paesi Bassi",
         "merce": "telone",
         "data": "26.06.23",

@@ -12,14 +12,12 @@
            padding: 0;
            box-sizing: border-box;
        }
-
        
        header {
            text-align: left;
            margin: 20px;
            display: flex;
            align-items: baseline;
-           /* justify-content: space-evenly; */
        }
        header h1 {
            font-size: 130px; /* 25px */
@@ -30,7 +28,6 @@
             margin-left: 1rem;
        }
 
- 
        main {
            display: grid;
            grid-template-columns: repeat(10, 1fr); /* 10 columns */
@@ -79,30 +76,39 @@
            background: none;
            cursor: pointer;
            margin-bottom: 50px;
-       
-          
        }
        .active {
            font-weight: bold;
        }
+       table {
+           width: 100%;
+           border-collapse: collapse;
+       }
+       th, td {
+           border: 1px solid black;
+           padding: 8px;
+           text-align: left;
+       }
+
+       table {
+
+
+       }
+       
    </style>
 </head>
 <body>
    <header>
-      
        <h1 id="titolo">gica.ch</h1>
        <div id="bottoni">
            <button onclick="displayHomeLayout(this)">Home</button>
-           <button onclick="sortByColor(this)">Colore</button>
            <button onclick="sortByDate(this)">Data</button>
            <button onclick="sortByProvenienza(this)">Provenienza</button>
            <button onclick="sortByMerce(this)">Merce</button>
+           <button onclick="displayMetadata(this)">Metadati</button>
        </div>  
-       
    </header>
-   
- 
-   <main></main>
+   <main id="main"></main>
    <script>
        let data;
        document.addEventListener('DOMContentLoaded', function() {
@@ -111,11 +117,10 @@
                .then(json => {
                    data = json;
                    displayHomeLayout();
-                   // Setta il pulsante "Home" come attivo di default
                    document.querySelector('button').classList.add('active');
                });
        });
- 
+
        function displayData(data, isSortedByDate = false) {
            const output = data.slice(0, 100).map(item => `
                <div class='item ${isSortedByDate ? 'small-img' : ''}'>
@@ -131,20 +136,29 @@
            `).join('');
            document.querySelector('main').innerHTML = output;
        }
- 
+
        function displayHomeLayout(button) {
            resetButtons();
+           resetLayout('grid')
+
+           const main = document.getElementById('main')
+           main.style.display = 'grid'
+
            if (button) {
                button.classList.add('active');
            } else {
-               // Se non è stato passato alcun bottone, attiva il primo bottone (Home)
                document.querySelectorAll('button')[0].classList.add('active');
            }
            displayData(data);
        }
- 
+
        function sortByColor(button) {
            resetButtons();
+           resetLayout('grid')
+
+           const main = document.getElementById('main')
+           main.style.display = 'grid'
+
            button.classList.add('active');
            const sortedData = [...data].sort((a, b) => {
                const aRGB = a.colore.split(', ').map(Number);
@@ -153,25 +167,27 @@
            });
            displayData(sortedData);
        }
- 
+
        function sortByDate(button) {
            resetButtons();
+           resetLayout('grid')
+
            button.classList.add('active');
            const groupedByDate = [...data].reduce((acc, cur) => {
                (acc[cur.data] = acc[cur.data] || []).push(cur);
                return acc;
            }, {});
- 
+
            const output = Object.keys(groupedByDate).sort((a, b) => new Date(a) - new Date(b)).map(date => {
                const itemsHtml = groupedByDate[date].map(item => `
                    <div class='item small-img'>
                        <img src='./assets/immagini/${item.file}.jpg'>
                        <div class="image-info">
                         <div class='data'>${item.data}</div>
-                    <div class='provenienza'>${item.provenienza}</div>
-                    <div class='vagone'>${item.vagone}</div>
-                    <div class='merce'>${item.merce}</div>
-                    <div class='prestazione'>${item.prestazione}</div>
+                        <div class='provenienza'>${item.provenienza}</div>
+                        <div class='vagone'>${item.vagone}</div>
+                        <div class='merce'>${item.merce}</div>
+                        <div class='prestazione'>${item.prestazione}</div>
                        </div>
                    </div>
                `).join('');
@@ -180,28 +196,30 @@
                            ${itemsHtml}
                        </div>`;
            }).join('');
- 
+
            document.querySelector('main').innerHTML = output;
        }
- 
+
        function sortByProvenienza(button) {
            resetButtons();
+           resetLayout('grid')
+
            button.classList.add('active');
            const groupedByProvenienza = [...data].reduce((acc, cur) => {
                (acc[cur.provenienza] = acc[cur.provenienza] || []).push(cur);
                return acc;
            }, {});
- 
+
            const output = Object.keys(groupedByProvenienza).sort().map(provenienza => {
                const itemsHtml = groupedByProvenienza[provenienza].map(item => `
                    <div class='item small-img'>
                        <img src='./assets/immagini/${item.file}.jpg'>
                        <div class="image-info">
                         <div class='data'>${item.data}</div>
-                    <div class='provenienza'>${item.provenienza}</div>
-                    <div class='vagone'>${item.vagone}</div>
-                    <div class='merce'>${item.merce}</div>
-                    <div class='prestazione'>${item.prestazione}</div>
+                        <div class='provenienza'>${item.provenienza}</div>
+                        <div class='vagone'>${item.vagone}</div>
+                        <div class='merce'>${item.merce}</div>
+                        <div class='prestazione'>${item.prestazione}</div>
                        </div>
                    </div>
                `).join('');
@@ -210,28 +228,30 @@
                            ${itemsHtml}
                        </div>`;
            }).join('');
- 
+
            document.querySelector('main').innerHTML = output;
        }
- 
+
        function sortByMerce(button) {
            resetButtons();
+           resetLayout('grid')
+
            button.classList.add('active');
            const groupedByMerce = [...data].reduce((acc, cur) => {
                (acc[cur.merce] = acc[cur.merce] || []).push(cur);
                return acc;
            }, {});
- 
+
            const output = Object.keys(groupedByMerce).sort().map(merce => {
                const itemsHtml = groupedByMerce[merce].map(item => `
                    <div class='item small-img'>
                        <img src='./assets/immagini/${item.file}.jpg'>
                        <div class="image-info">
                         <div class='data'>${item.data}</div>
-                    <div class='provenienza'>${item.provenienza}</div>
-                    <div class='vagone'>${item.vagone}</div>
-                    <div class='merce'>${item.merce}</div>
-                    <div class='prestazione'>${item.prestazione}</div>
+                        <div class='provenienza'>${item.provenienza}</div>
+                        <div class='vagone'>${item.vagone}</div>
+                        <div class='merce'>${item.merce}</div>
+                        <div class='prestazione'>${item.prestazione}</div>
                        </div>
                    </div>
                `).join('');
@@ -240,12 +260,47 @@
                            ${itemsHtml}
                        </div>`;
            }).join('');
- 
+
            document.querySelector('main').innerHTML = output;
        }
- 
+
+       function displayMetadata(button) {
+           resetButtons();
+           resetLayout('block')
+
+           button.classList.add('active');
+           const headers = Object.keys(data[0]); // Extract column headers from the first item
+           const tableHeaders = headers.map(header => `<th>${header}</th>`).join('');
+
+           const rows = data.map(item => {
+               const row = headers.map(header => `<td>${item[header]}</td>`).join('');
+               return `<tr>${row}</tr>`;
+           }).join('');
+
+           const table = `
+               <table border="1" style="width:100%; text-align:left;">
+                   <thead>
+                       <tr>${tableHeaders}</tr>
+                   </thead>
+                   <tbody>${rows}</tbody>
+               </table>
+           `;
+           document.querySelector('main').innerHTML = table;
+       }
+
        function resetButtons() {
            document.querySelectorAll('button').forEach(button => button.classList.remove('active'));
+       }
+
+        function resetLayout(display){
+            const main = document.getElementById('main')
+
+            if (display == 'grid'){
+                main.style.display = 'grid'
+            }
+            else {
+                main.style.display = 'block'
+            }
        }
    </script>
 </body>

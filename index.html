@@ -94,11 +94,34 @@
 
 
        }
+
+       a {
+        position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px;
+    
+}
+
+a { 
+    color: black;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline; /* Aggiunge una sottolineatura al passaggio del mouse, puoi rimuoverla se non la vuoi */
+}
        
    </style>
 </head>
 <body>
    <header>
+    <div class="index">
+        <a href="https://ixd-supsi.github.io/2024/">Index</a>
+      </div>
+      
        <h1 id="titolo">gica.ch</h1>
        <div id="bottoni">
            <button onclick="displayHomeLayout(this)">Home</button>

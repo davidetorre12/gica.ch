@@ -2,11 +2,11 @@ SUPSI 2023-24
 Corso d’interaction design, CV427.01  
 Docenti: A. Gysin, G. Profeta  
 
-Elaborato 1: gica.ch
+Elaborato 1: XS
 
-# Titolo progetto
+# gica.ch
 Autore: Davide Torre  
-[gica.ch](xxxxxx)
+[gica.ch](https://davidetorre12.github.io/gica.ch/)
 
 
 ## Introduzione e tema
@@ -62,6 +62,7 @@ function displayData(data) {
     document.querySelector('main').innerHTML = output;
 }
 -------------
+
 // Funzione per ordinare i dati per data
 function sortByDate(data) {
     return data.sort((a, b) => new Date(a.data) - new Date(b.data));
